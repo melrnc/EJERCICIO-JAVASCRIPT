@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cálculo de espacio en MRUA</h1>
+    <button>Calcula X Pide Datos</button>
+    <script>
+        function pideDatos(){
+            const a = prompt("Dime la aceleración");
+            const t = prompt("Dime el tiempo");
+            const x = mrua(a,t);
+        }
+        function mrua(a,t){
+            const x = a * Math.pow(t,2)/2;
+            return x;
+        }
+    </script>
+</body>
+</html>
